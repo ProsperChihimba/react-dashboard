@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { AnimateSharedLayout } from 'framer-motion'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import './Card.css'
 
 const Card = (props) => {
     
