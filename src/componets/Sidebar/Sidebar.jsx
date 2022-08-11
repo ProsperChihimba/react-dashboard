@@ -1,6 +1,7 @@
 import React from "react";
 import './Sidebar.css';
 import Logo from '../../imgs/logo.png';
+import { SidebarData } from "../../Data/Data";
 
 const Sidebar = () => {
     return (
@@ -15,12 +16,16 @@ const Sidebar = () => {
 
             {/* menu */}
             <div className="menu">
-                <div className="menuItem">
-                    <div>
-                        Icon
-                    </div>
-                    <span>Dashboard</span>
-                </div>
+                {SidebarData.map((item, index) => {
+                    return (
+                        <div className="menuItem">
+                            <item.icon />
+                            <span>
+                                {item.heading}
+                            </span>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )
