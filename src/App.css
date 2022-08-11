@@ -21,13 +21,14 @@
   /* position: absolute;
   width: 1121px;
   height: 1958px; */
-  left: 299px;
-  top: 49px;
+  /* left: 299px;
+  top: 49px; */
   background: linear-gradient(136.6deg, #FFE7CD 0.57%, #E0FDFF 100%);
-  border-radius: 12px;
+  /* border-radius: 12px; */
   height: 100vh;
   display: flex;
   font-family: 'Inter', sans-serif;
+  justify-content: center;
 }
 
 .AppGlass{
@@ -36,4 +37,6 @@
   width: 97%;
   border-radius: 2rem;
   background-color: var(--glass);
+  overflow: hidden;
+  grid-template-columns: 11rem auto 20rem;
 }
